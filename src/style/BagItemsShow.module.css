@@ -1,0 +1,42 @@
+.bagItemsShown{
+ 
+position: fixed;
+height: 100%;
+width: 100%;
+opacity: 1;
+z-index: 99;
+}
+
+.text{
+  position: fixed;
+  margin-top: 3.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  width: 380px;
+  background: white;
+  right: 0;
+}
+
+.showingName{
+  position: absolute;
+  width: 250px;
+  top: 4rem;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hide{
+  display: none;
+}
+
+@media (max-width:900px) {
+  .text{
+    width: 250px;
+height: 300px;
+  }
+
+}

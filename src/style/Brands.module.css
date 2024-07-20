@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Maname&display=swap');
+
+.brands{
+  margin: 80px auto;
+  padding: 0 80px;
+  position: relative;
+}
+
+
+.brands h2{
+  font-family: "Maname", serif;
+text-align: center;
+font-size: 30px;
+margin-bottom: 30px;
+font-weight: lighter;
+}
+.forwardarrow , .bakwardarrow{
+position: absolute;
+top: 50%;
+right: 2rem;
+transform: translateY(-50%);
+display: flex;
+padding: 15px;
+width: 50px;
+border-radius: 50%;
+cursor: pointer;
+box-shadow: 0 0 10px rgb(114, 114, 114);
+z-index: -99;
+}
+
+.bakwardarrow{
+  right: 0;
+  left: 2rem;
+}
+
+@keyframes slide {
+  form{
+transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+.arrow{
+  width: 40px;
+  height: 20px;
+}
+
+.slider{
+  overflow: hidden;
+}
+
+.slider:hover ul{
+  animation-play-state: paused;
+}
+
+
+.slider ul{
+  display: flex;
+  width: 450%;
+  overflow-x: hidden;
+  transition: 20s;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  animation: 60s slide infinite linear;
+  /* transform: translateX(-13%); */
+}
+
+
+
+.brand1{
+  width: 200px;
+  height: 150px;
+  position: relative;
+  border: 1px solid rgb(133, 130, 130);
+}
+
+.brandImg{
+  width: 100%;
+height: 100%;
+position: absolute;
+object-fit: cover;
+}
+
+.slider ul li{
+  list-style: none;
+  width: 150%;
+  margin: 0 10px;
+}
+
+.slide p{
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(141, 141, 214);
+}

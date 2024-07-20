@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.register{
+  height: 80vh;
+  width: 90%;
+  margin: 20px auto;
+  display: inline-flex;
+  padding-left: 5%;
+}
+
+.slide1{
+  width: 50%;
+  height: 400px;
+  position: relative;
+  background: linear-gradient(rgb(211, 205, 205,0.3),rgb(211, 205, 205,0.3)),url("../assets/slide1.jpg");
+  margin: 0 20px;
+}
+
+.slide2{
+  width: 50%;
+  height: 400px;
+  position: relative;
+  background: linear-gradient(rgb(211, 205, 205,0.3),rgb(211, 205, 205,0.3)),url("../assets/slide3.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content{
+  width: 230px;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+.register h2{
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.content button{
+  padding: 12px 20px;
+  background-color: white;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width:730px) {
+  .register{
+    height: 140vh;
+    width: 200%;
+    margin: 20px auto;
+    display: block;
+    padding-left: 0;
+  }
+  .slide1{
+    margin-bottom: 40px;
+  }
+  
+}

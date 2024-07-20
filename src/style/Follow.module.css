@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Maname&display=swap');
+
+.follow{
+  margin: 20px auto;
+  width: 90%;
+  position: relative;
+}
+
+.follow h2{
+  font-family: "Maname", serif;
+  text-align: center;
+font-size: 30px;
+margin-bottom: 30px;
+font-weight: lighter;
+}
+
+.followImges{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border: 1px solid rgb(117, 116, 116);
+}
+
+
+.follow ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10%;
+}
+.follow ul li{
+  list-style: none;
+  margin: 0 15px;
+}
+
+.images{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+@media (max-width:950px) {
+  .follow ul {
+    flex-wrap: wrap;
+    padding-right: 8%;
+  }
+}

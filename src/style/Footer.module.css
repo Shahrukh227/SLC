@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.footer{
+  background: rgba(4, 4, 199, 0.959);
+  height: 48vh;
+  width: 99vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid orangered;
+  border-bottom: 2px solid orangered;
+}
+
+.contact{
+  width: 55%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: -4rem;
+}
+
+.contact ul{
+  margin: 15px  40px;
+}
+
+.contact ul li{
+  list-style: none;
+  line-height: 1.7rem;
+}
+
+.contact ul li a{
+  text-decoration: none;
+}
+
+.head{
+  color: orangered;
+  font-size: 14px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.body{
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.mail{
+  width: 33%;
+  position: relative;
+  top: -4rem;
+  line-height: 1.9rem;
+}
+
+.mail h2{
+  color: orangered;
+  font-size: medium;
+  font-weight: light;
+}
+
+.mail p{
+color: white;
+}
+
+.email{
+  width: 220px;
+  height: 40px;
+  border-radius: 24px;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+
+.btn{
+  padding: 15px 30px;
+  background-color: orangered;
+  border: none;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 24px;
+}
+
+.underline{
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(4, 4, 199, 0.959);
+  padding-left: 2%;
+  padding-right: 2%;
+  color: white;
+}
+
+.start{
+  color: orangered;
+}
+
+.end{
+  color: rgb(154, 154, 228);
+}
+
+@media (max-width:1000px)  {
+  .contact{
+    width: 45%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+  }
+
+  .footer{
+    display: block;
+    height: 100vh;
+  }
+
+  .mail{
+   
+    top: 2rem;
+    left: 2rem;
+  }
+}
+
+@media (max-width:550px) {
+  .footer{
+    display: block;
+    height: 100vh;
+  }
+  .contact{
+    display: block;
+  }
+
+  .underline{
+    position: relative;
+    top: 0rem;
+  }
+
+  .head{
+    font-size: 14px;
+  }
+}
+
+@media (max-width:380px) {
+  .footer{
+    display: block;
+    height: 130vh;
+  }
+}
