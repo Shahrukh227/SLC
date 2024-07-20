@@ -14,9 +14,7 @@ const disableBag = (e)=>{
 
   return (
     <div className={`${css.bagItemsShown} ${items ? "" : css.hide}`} ref={Bag} onClick={disableBag}>
-      <div className={css.showingName}>
-      {filteredItems.map((name)=>name.name)}
-      </div>
+  
       
       <p className={css.text}>There are no Items Added</p>
     </div>
