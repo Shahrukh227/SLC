@@ -146,9 +146,10 @@ color: white;
   }
 }
 
-@media (max-width:380px) {
+@media (max-width:400px) {
   .footer{
     display: block;
     height: 130vh;
   }
+
 }
